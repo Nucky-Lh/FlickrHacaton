@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		038F558726D101290089439F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F558626D101290089439F /* AppDelegate.swift */; };
+		038F558926D101290089439F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F558826D101290089439F /* SceneDelegate.swift */; };
+		038F559126D101290089439F /* PhotoHacaton.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 038F558F26D101290089439F /* PhotoHacaton.xcdatamodeld */; };
+		038F559326D1012D0089439F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038F559226D1012D0089439F /* Assets.xcassets */; };
+		038F559626D1012D0089439F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038F559426D1012D0089439F /* LaunchScreen.storyboard */; };
+		038F55A126D1012D0089439F /* PhotoHacatonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F55A026D1012D0089439F /* PhotoHacatonTests.swift */; };
+		038F55AC26D1012D0089439F /* PhotoHacatonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F55AB26D1012D0089439F /* PhotoHacatonUITests.swift */; };
+		038F55BF26D10A440089439F /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F55BD26D10A440089439F /* CustomViewCell.swift */; };
+		038F55C226D113E20089439F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038F55C126D113E20089439F /* Main.storyboard */; };
+		038F55C426D1151C0089439F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F55C326D1151C0089439F /* MainViewController.swift */; };
+		038F55C626D119C70089439F /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F55C526D119C70089439F /* PhotoViewController.swift */; };
+		038F55C826D149CB0089439F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F55C726D149CB0089439F /* Photo.swift */; };
+		4F8DE3D4B4FCF844D0759F80 /* Pods_PhotoHacaton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96EE609FEA4B60744641BC62 /* Pods_PhotoHacaton.framework */; };
+		9E3190635A6380535B4C5B0A /* Pods_PhotoHacatonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C35AA1CE2C339926C9D374 /* Pods_PhotoHacatonTests.framework */; };
+		C02BFBBA504C18A75F399BA4 /* Pods_PhotoHacaton_PhotoHacatonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B1A645F8D0694CD07E727B /* Pods_PhotoHacaton_PhotoHacatonUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		038F559D26D1012D0089439F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 038F557B26D101290089439F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 038F558226D101290089439F;
+			remoteInfo = PhotoHacaton;
+		};
+		038F55A826D1012D0089439F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 038F557B26D101290089439F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 038F558226D101290089439F;
+			remoteInfo = PhotoHacaton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		038F558326D101290089439F /* PhotoHacaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoHacaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		038F558626D101290089439F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		038F558826D101290089439F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		038F559026D101290089439F /* PhotoHacaton.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoHacaton.xcdatamodel; sourceTree = "<group>"; };
+		038F559226D1012D0089439F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		038F559526D1012D0089439F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		038F559726D1012D0089439F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		038F559C26D1012D0089439F /* PhotoHacatonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoHacatonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		038F55A026D1012D0089439F /* PhotoHacatonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoHacatonTests.swift; sourceTree = "<group>"; };
+		038F55A226D1012D0089439F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		038F55A726D1012D0089439F /* PhotoHacatonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoHacatonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		038F55AB26D1012D0089439F /* PhotoHacatonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoHacatonUITests.swift; sourceTree = "<group>"; };
+		038F55AD26D1012D0089439F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		038F55BD26D10A440089439F /* CustomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
+		038F55C126D113E20089439F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		038F55C326D1151C0089439F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		038F55C526D119C70089439F /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		038F55C726D149CB0089439F /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		174A1E0EB4CE2CE87FD6A1B4 /* Pods-PhotoHacaton-PhotoHacatonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoHacaton-PhotoHacatonUITests.release.xcconfig"; path = "Target Support Files/Pods-PhotoHacaton-PhotoHacatonUITests/Pods-PhotoHacaton-PhotoHacatonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		42B1A645F8D0694CD07E727B /* Pods_PhotoHacaton_PhotoHacatonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoHacaton_PhotoHacatonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A38D1B7E5C7410DBC8181A /* Pods-PhotoHacatonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoHacatonTests.release.xcconfig"; path = "Target Support Files/Pods-PhotoHacatonTests/Pods-PhotoHacatonTests.release.xcconfig"; sourceTree = "<group>"; };
+		51E4176AD07C93B0172E263A /* Pods-PhotoHacatonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoHacatonTests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoHacatonTests/Pods-PhotoHacatonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81283140B4DE4785A5F54FE6 /* Pods-PhotoHacaton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoHacaton.release.xcconfig"; path = "Target Support Files/Pods-PhotoHacaton/Pods-PhotoHacaton.release.xcconfig"; sourceTree = "<group>"; };
+		91618B67BCAA753E7E5090BC /* Pods-PhotoHacaton-PhotoHacatonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoHacaton-PhotoHacatonUITests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoHacaton-PhotoHacatonUITests/Pods-PhotoHacaton-PhotoHacatonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		96EE609FEA4B60744641BC62 /* Pods_PhotoHacaton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoHacaton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C35AA1CE2C339926C9D374 /* Pods_PhotoHacatonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoHacatonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8D63CDDFF89BF1C9FC062D /* Pods-PhotoHacaton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoHacaton.debug.xcconfig"; path = "Target Support Files/Pods-PhotoHacaton/Pods-PhotoHacaton.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		038F558026D101290089439F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8DE3D4B4FCF844D0759F80 /* Pods_PhotoHacaton.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038F559926D1012D0089439F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E3190635A6380535B4C5B0A /* Pods_PhotoHacatonTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038F55A426D1012D0089439F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02BFBBA504C18A75F399BA4 /* Pods_PhotoHacaton_PhotoHacatonUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		037DFA4FB4EBF6A8A838E8D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96EE609FEA4B60744641BC62 /* Pods_PhotoHacaton.framework */,
+				42B1A645F8D0694CD07E727B /* Pods_PhotoHacaton_PhotoHacatonUITests.framework */,
+				E6C35AA1CE2C339926C9D374 /* Pods_PhotoHacatonTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		038F557A26D101290089439F = {
+			isa = PBXGroup;
+			children = (
+				038F558526D101290089439F /* PhotoHacaton */,
+				038F559F26D1012D0089439F /* PhotoHacatonTests */,
+				038F55AA26D1012D0089439F /* PhotoHacatonUITests */,
+				038F558426D101290089439F /* Products */,
+				EDD51F5F19E28AE90799F8EE /* Pods */,
+				037DFA4FB4EBF6A8A838E8D0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		038F558426D101290089439F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				038F558326D101290089439F /* PhotoHacaton.app */,
+				038F559C26D1012D0089439F /* PhotoHacatonTests.xctest */,
+				038F55A726D1012D0089439F /* PhotoHacatonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		038F558526D101290089439F /* PhotoHacaton */ = {
+			isa = PBXGroup;
+			children = (
+				038F558626D101290089439F /* AppDelegate.swift */,
+				038F558826D101290089439F /* SceneDelegate.swift */,
+				038F55C726D149CB0089439F /* Photo.swift */,
+				038F55BD26D10A440089439F /* CustomViewCell.swift */,
+				038F55C126D113E20089439F /* Main.storyboard */,
+				038F55C326D1151C0089439F /* MainViewController.swift */,
+				038F55C526D119C70089439F /* PhotoViewController.swift */,
+				038F559226D1012D0089439F /* Assets.xcassets */,
+				038F559426D1012D0089439F /* LaunchScreen.storyboard */,
+				038F559726D1012D0089439F /* Info.plist */,
+				038F558F26D101290089439F /* PhotoHacaton.xcdatamodeld */,
+			);
+			path = PhotoHacaton;
+			sourceTree = "<group>";
+		};
+		038F559F26D1012D0089439F /* PhotoHacatonTests */ = {
+			isa = PBXGroup;
+			children = (
+				038F55A026D1012D0089439F /* PhotoHacatonTests.swift */,
+				038F55A226D1012D0089439F /* Info.plist */,
+			);
+			path = PhotoHacatonTests;
+			sourceTree = "<group>";
+		};
+		038F55AA26D1012D0089439F /* PhotoHacatonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				038F55AB26D1012D0089439F /* PhotoHacatonUITests.swift */,
+				038F55AD26D1012D0089439F /* Info.plist */,
+			);
+			path = PhotoHacatonUITests;
+			sourceTree = "<group>";
+		};
+		EDD51F5F19E28AE90799F8EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE8D63CDDFF89BF1C9FC062D /* Pods-PhotoHacaton.debug.xcconfig */,
+				81283140B4DE4785A5F54FE6 /* Pods-PhotoHacaton.release.xcconfig */,
+				91618B67BCAA753E7E5090BC /* Pods-PhotoHacaton-PhotoHacatonUITests.debug.xcconfig */,
+				174A1E0EB4CE2CE87FD6A1B4 /* Pods-PhotoHacaton-PhotoHacatonUITests.release.xcconfig */,
+				51E4176AD07C93B0172E263A /* Pods-PhotoHacatonTests.debug.xcconfig */,
+				45A38D1B7E5C7410DBC8181A /* Pods-PhotoHacatonTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		038F558226D101290089439F /* PhotoHacaton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 038F55B026D1012D0089439F /* Build configuration list for PBXNativeTarget "PhotoHacaton" */;
+			buildPhases = (
+				2BECE6F34DD505EE96DF9418 /* [CP] Check Pods Manifest.lock */,
+				038F557F26D101290089439F /* Sources */,
+				038F558026D101290089439F /* Frameworks */,
+				038F558126D101290089439F /* Resources */,
+				6122AACF3329876235F8D85E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoHacaton;
+			productName = PhotoHacaton;
+			productReference = 038F558326D101290089439F /* PhotoHacaton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		038F559B26D1012D0089439F /* PhotoHacatonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 038F55B326D1012D0089439F /* Build configuration list for PBXNativeTarget "PhotoHacatonTests" */;
+			buildPhases = (
+				66DC3359B4AA8997009AE436 /* [CP] Check Pods Manifest.lock */,
+				038F559826D1012D0089439F /* Sources */,
+				038F559926D1012D0089439F /* Frameworks */,
+				038F559A26D1012D0089439F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				038F559E26D1012D0089439F /* PBXTargetDependency */,
+			);
+			name = PhotoHacatonTests;
+			productName = PhotoHacatonTests;
+			productReference = 038F559C26D1012D0089439F /* PhotoHacatonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		038F55A626D1012D0089439F /* PhotoHacatonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 038F55B626D1012D0089439F /* Build configuration list for PBXNativeTarget "PhotoHacatonUITests" */;
+			buildPhases = (
+				EBA3EA39CAAA149F54B9BA81 /* [CP] Check Pods Manifest.lock */,
+				038F55A326D1012D0089439F /* Sources */,
+				038F55A426D1012D0089439F /* Frameworks */,
+				038F55A526D1012D0089439F /* Resources */,
+				5E06A92D1739C181E2943828 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				038F55A926D1012D0089439F /* PBXTargetDependency */,
+			);
+			name = PhotoHacatonUITests;
+			productName = PhotoHacatonUITests;
+			productReference = 038F55A726D1012D0089439F /* PhotoHacatonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		038F557B26D101290089439F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					038F558226D101290089439F = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					038F559B26D1012D0089439F = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 038F558226D101290089439F;
+					};
+					038F55A626D1012D0089439F = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 038F558226D101290089439F;
+					};
+				};
+			};
+			buildConfigurationList = 038F557E26D101290089439F /* Build configuration list for PBXProject "PhotoHacaton" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 038F557A26D101290089439F;
+			productRefGroup = 038F558426D101290089439F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				038F558226D101290089439F /* PhotoHacaton */,
+				038F559B26D1012D0089439F /* PhotoHacatonTests */,
+				038F55A626D1012D0089439F /* PhotoHacatonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		038F558126D101290089439F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038F559626D1012D0089439F /* LaunchScreen.storyboard in Resources */,
+				038F559326D1012D0089439F /* Assets.xcassets in Resources */,
+				038F55C226D113E20089439F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038F559A26D1012D0089439F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038F55A526D1012D0089439F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BECE6F34DD505EE96DF9418 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoHacaton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E06A92D1739C181E2943828 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoHacaton-PhotoHacatonUITests/Pods-PhotoHacaton-PhotoHacatonUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoHacaton-PhotoHacatonUITests/Pods-PhotoHacaton-PhotoHacatonUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoHacaton-PhotoHacatonUITests/Pods-PhotoHacaton-PhotoHacatonUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6122AACF3329876235F8D85E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoHacaton/Pods-PhotoHacaton-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoHacaton/Pods-PhotoHacaton-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoHacaton/Pods-PhotoHacaton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66DC3359B4AA8997009AE436 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoHacatonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBA3EA39CAAA149F54B9BA81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoHacaton-PhotoHacatonUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		038F557F26D101290089439F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038F55C826D149CB0089439F /* Photo.swift in Sources */,
+				038F55C426D1151C0089439F /* MainViewController.swift in Sources */,
+				038F55BF26D10A440089439F /* CustomViewCell.swift in Sources */,
+				038F559126D101290089439F /* PhotoHacaton.xcdatamodeld in Sources */,
+				038F55C626D119C70089439F /* PhotoViewController.swift in Sources */,
+				038F558726D101290089439F /* AppDelegate.swift in Sources */,
+				038F558926D101290089439F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038F559826D1012D0089439F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038F55A126D1012D0089439F /* PhotoHacatonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038F55A326D1012D0089439F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038F55AC26D1012D0089439F /* PhotoHacatonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		038F559E26D1012D0089439F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 038F558226D101290089439F /* PhotoHacaton */;
+			targetProxy = 038F559D26D1012D0089439F /* PBXContainerItemProxy */;
+		};
+		038F55A926D1012D0089439F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 038F558226D101290089439F /* PhotoHacaton */;
+			targetProxy = 038F55A826D1012D0089439F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		038F559426D1012D0089439F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				038F559526D1012D0089439F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		038F55AE26D1012D0089439F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		038F55AF26D1012D0089439F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		038F55B126D1012D0089439F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE8D63CDDFF89BF1C9FC062D /* Pods-PhotoHacaton.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotoHacaton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikolay-Lakhov.PhotoHacaton";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		038F55B226D1012D0089439F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81283140B4DE4785A5F54FE6 /* Pods-PhotoHacaton.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotoHacaton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikolay-Lakhov.PhotoHacaton";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		038F55B426D1012D0089439F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51E4176AD07C93B0172E263A /* Pods-PhotoHacatonTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotoHacatonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikolay-Lakhov.PhotoHacatonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoHacaton.app/PhotoHacaton";
+			};
+			name = Debug;
+		};
+		038F55B526D1012D0089439F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A38D1B7E5C7410DBC8181A /* Pods-PhotoHacatonTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotoHacatonTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikolay-Lakhov.PhotoHacatonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoHacaton.app/PhotoHacaton";
+			};
+			name = Release;
+		};
+		038F55B726D1012D0089439F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91618B67BCAA753E7E5090BC /* Pods-PhotoHacaton-PhotoHacatonUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotoHacatonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikolay-Lakhov.PhotoHacatonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoHacaton;
+			};
+			name = Debug;
+		};
+		038F55B826D1012D0089439F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 174A1E0EB4CE2CE87FD6A1B4 /* Pods-PhotoHacaton-PhotoHacatonUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotoHacatonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nikolay-Lakhov.PhotoHacatonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoHacaton;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		038F557E26D101290089439F /* Build configuration list for PBXProject "PhotoHacaton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038F55AE26D1012D0089439F /* Debug */,
+				038F55AF26D1012D0089439F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		038F55B026D1012D0089439F /* Build configuration list for PBXNativeTarget "PhotoHacaton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038F55B126D1012D0089439F /* Debug */,
+				038F55B226D1012D0089439F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		038F55B326D1012D0089439F /* Build configuration list for PBXNativeTarget "PhotoHacatonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038F55B426D1012D0089439F /* Debug */,
+				038F55B526D1012D0089439F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		038F55B626D1012D0089439F /* Build configuration list for PBXNativeTarget "PhotoHacatonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038F55B726D1012D0089439F /* Debug */,
+				038F55B826D1012D0089439F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		038F558F26D101290089439F /* PhotoHacaton.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				038F559026D101290089439F /* PhotoHacaton.xcdatamodel */,
+			);
+			currentVersion = 038F559026D101290089439F /* PhotoHacaton.xcdatamodel */;
+			path = PhotoHacaton.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 038F557B26D101290089439F /* Project object */;
+}
